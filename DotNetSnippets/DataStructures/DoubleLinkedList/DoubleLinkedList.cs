@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace AlgorithmSnippets.DoubleLinkedList
+namespace DotNetSnippets.DataStructures.DoubleLinkedList
 {
     public class DoubleLinkedList <T> : IEnumerable
     {

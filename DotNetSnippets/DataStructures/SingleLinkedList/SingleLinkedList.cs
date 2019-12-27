@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace AlgorithmSnippets.SingleLinkedList
+namespace DotNetSnippets.DataStructures.SingleLinkedList
 {
     public class SingleLinkedList <T> : IEnumerable
     {

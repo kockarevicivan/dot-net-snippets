@@ -1,17 +1,10 @@
-﻿using AlgorithmSnippets.DoubleLinkedList;
-using AlgorithmSnippets.SingleLinkedList;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace AlgorithmSnippets
+namespace DotNetSnippets.Algorithms
 {
-    class Program
+    public class RandomService
     {
-        static void Main(string[] args)
-        {
-            
-        }
-
-        static void WantedSumLinear()
+        private static void WantedSumLinear()
         {
             int[] numbers = { 5, 2, 4, 11, 39 };
             int wantedSum = 13;
@@ -29,7 +22,7 @@ namespace AlgorithmSnippets
             }
         }
 
-        static void SortedWantedSum()
+        private static void SortedWantedSum()
         {
             int[] numbers = { 1, 2, 3, 9 };
             int wantedSum = 5;
@@ -50,7 +43,7 @@ namespace AlgorithmSnippets
             }
         }
 
-        static void WantedSumNSquared()
+        private static void WantedSumNSquared()
         {
             int[] numbers = { 5, 2, 4, 11, 39 };
             int wantedSum = 41;
@@ -65,7 +58,7 @@ namespace AlgorithmSnippets
             }
         }
 
-        static void SecondMinimum()
+        private static void SecondMinimum()
         {
             int[] raw = { 3, 2, 5, 6 };
             int minimum = raw[0];
@@ -86,34 +79,6 @@ namespace AlgorithmSnippets
 
             System.Console.WriteLine("min: " + minimum);
             System.Console.WriteLine(secondMinimum);
-        }
-
-        static void TestSLL()
-        {
-            SingleLinkedList<int> myList = new SingleLinkedList<int>();
-
-            myList.Add(345).Add(-26).Add(0).Add(0).Add(1000);
-
-            var result = myList.Search(1000);
-
-            myList.Remove(345).Remove(0).Remove(1000);
-
-            foreach (var item in myList)
-                System.Console.WriteLine(item);
-        }
-
-        static void TestDLL()
-        {
-            DoubleLinkedList<int> myList = new DoubleLinkedList<int>();
-
-            myList.Add(345).Add(-26).Add(0).Add(0).Add(1000);
-
-            var result = myList.Search(1000);
-
-            myList.Remove(345).Remove(0).Remove(1000);
-
-            foreach (var item in myList)
-                System.Console.WriteLine(item);
         }
     }
 }

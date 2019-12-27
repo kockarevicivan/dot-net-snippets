@@ -1,4 +1,4 @@
-﻿namespace AlgorithmSnippets.SingleLinkedList
+﻿namespace DotNetSnippets.DataStructures.SingleLinkedList
 {
     public class SLLNode<T>
     {

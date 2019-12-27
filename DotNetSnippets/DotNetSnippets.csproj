@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{67F3FAAF-20D0-452F-ADB6-18E8DD2D8E0F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AlgorithmSnippets</RootNamespace>
-    <AssemblyName>AlgorithmSnippets</AssemblyName>
+    <RootNamespace>DotNetSnippets</RootNamespace>
+    <AssemblyName>DotNetSnippets</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DoubleLinkedList\DoubleLinkedList.cs" />
-    <Compile Include="DoubleLinkedList\DLLNode.cs" />
+    <Compile Include="Algorithms\RandomService.cs" />
+    <Compile Include="Algorithms\SortingService.cs" />
+    <Compile Include="DataStructures\BinaryTree\BTNode.cs" />
+    <Compile Include="DataStructures\BinaryTree\BinaryTree.cs" />
+    <Compile Include="DataStructures\DoubleLinkedList\DoubleLinkedList.cs" />
+    <Compile Include="DataStructures\DoubleLinkedList\DLLNode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SingleLinkedList\SLLNode.cs" />
-    <Compile Include="SingleLinkedList\SingleLinkedList.cs" />
+    <Compile Include="DataStructures\SingleLinkedList\SLLNode.cs" />
+    <Compile Include="DataStructures\SingleLinkedList\SingleLinkedList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
