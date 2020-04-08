@@ -4,30 +4,30 @@ namespace DotNetSnippets.DataStructures.DoubleLinkedList
 {
     public class DoubleLinkedList <T> : IEnumerable
     {
-        private DLLNode<T> _head = null;
-        private DLLNode<T> _tail = null;
+        public DoubleLinkedListNode<T> Head { get; private set; }
+        public DoubleLinkedListNode<T> Tail { get; private set; }
 
         public DoubleLinkedList<T> Add(T value)
         {
-            if (_head == null)
+            if (Head == null)
             {
-                _tail = _head = new DLLNode<T>(value);
+                Tail = Head = new DoubleLinkedListNode<T>(value);
             }
             else
             {
-                var newNode = new DLLNode<T>(value);
+                var newNode = new DoubleLinkedListNode<T>(value);
 
-                newNode.Previous = _tail;
+                newNode.Previous = Tail;
 
-                _tail = _tail.Next = newNode;
+                Tail = Tail.Next = newNode;
             }
 
             return this;
         }
 
-        public DLLNode<T> Search(T value)
+        public DoubleLinkedListNode<T> Search(T value)
         {
-            DLLNode<T> current = _head;
+            DoubleLinkedListNode<T> current = Head;
 
             while (current != null)
             {
@@ -42,15 +42,7 @@ namespace DotNetSnippets.DataStructures.DoubleLinkedList
 
         public DoubleLinkedList<T> Remove(T value)
         {
-            DLLNode<T> current = _head;
-
-            //if (_head.Value.Equals(value))
-            //{
-            //    _head = _head.Next;
-
-            //    if(_head.Next != null)
-            //        _head.Next.Previous = null;
-            //}
+            DoubleLinkedListNode<T> current = Head;
 
             while (current != null)
             {
@@ -71,7 +63,7 @@ namespace DotNetSnippets.DataStructures.DoubleLinkedList
 
         public IEnumerator GetEnumerator()
         {
-            DLLNode<T> current = _head;
+            DoubleLinkedListNode<T> current = Head;
 
             while (current != null)
             {
